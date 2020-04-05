@@ -32,17 +32,17 @@ class Rect extends Component{
     this.height = props.h;
     this.color = props.c;
     this.style = {
-      backgroundColor: "this.color",
+      backgroundColor: this.color,
       position: "absolute",
       left: this.x + "px",
       top: this.y + "px",
-      width: this.w + "px",
-      height: this.h + "px"
+      width: this.width + "px",
+      height: this.height + "px",
     }
   }
 
   render(){
-    return <div style={this.style}></div>
+    return <div style={this.style}></div>;
   }
 }
 export default App;
